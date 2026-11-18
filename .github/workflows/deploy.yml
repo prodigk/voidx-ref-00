@@ -28,7 +28,14 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run typecheck
+      - run: npm run build
+      # Project-scoped Vercel tokens cannot use `vercel pull`, so package the
+      # static export directly as Vercel Build Output API v3.
+      - name: Package static export
+        run: |
+          mkdir -p .vercel/output/static
+          cp -R out/. .vercel/output/static/
+          printf '%s\n' '{"version":3,"routes":[{"handle":"error"},{"status":404,"src":"^(?!/api).*$","dest":"/404.html"}]}' > .vercel/output/config.json
+          printf '{"orgId":"%s","projectId":"%s"}\n' "$VERCEL_ORG_ID" "$VERCEL_PROJECT_ID" > .vercel/project.json
       - run: npm install --global vercel@52.2.1
-      - run: vercel pull --yes --environment=production --token "$VERCEL_TOKEN"
-      - run: vercel build --prod --token "$VERCEL_TOKEN"
-      - run: vercel deploy --prebuilt --prod --token "$VERCEL_TOKEN"
+      - run: vercel deploy --prebuilt --prod --yes --token "$VERCEL_TOKEN"

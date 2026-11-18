@@ -34,7 +34,7 @@ npm run preview    # serves /out locally to check the production build
 
 Upload the `out` folder to any static host — Vercel, Netlify, Cloudflare Pages, GitHub Pages, S3. On Vercel or Netlify you can also just connect the repo: the build command is `npm run build` and the output directory is `out`.
 
-This repository deploys to Vercel through GitHub Actions when a commit is pushed to `main`. The workflow builds and deploys the site, so the Vercel project's Git integration does not need to be enabled. It needs the repository secrets `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`.
+This repository deploys to Vercel through GitHub Actions when a commit is pushed to `main`. The workflow builds the static site, packages `out/` as a Vercel deployment, and uploads it. The Vercel project's Git integration does not need to be enabled. It needs the repository secrets `VERCEL_TOKEN` (scoped to this project), `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`.
 
 Before going live, set your domain in `content/site.json` → `"url"` (used for social share images).
 
