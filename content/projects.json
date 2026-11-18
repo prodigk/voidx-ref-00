@@ -1,0 +1,458 @@
+[
+  {
+    "slug": "holla",
+    "title": "Holla",
+    "category": "Branding",
+    "subtitle": "Identity for a voice-notes app.",
+    "year": "2026",
+    "services": "Identity, Visual system, Motion",
+    "contentHtml": "<h2>A brand that says hello first</h2><p>Holla is a social app built around short, spontaneous voice notes. We shaped an identity that feels as warm and immediate as the product: a rounded wordmark, a soft cream palette and a motion language that bounces like a voice wave.</p><p>The system scales from app icon to billboard. Every element — from type to transitions — was designed to move, so the brand feels alive in every touchpoint.</p>",
+    "cover": {
+      "src": "/images/work/holla/cover.jpg",
+      "alt": "Holla — project cover"
+    },
+    "image2": {
+      "src": "/images/work/holla/image-2.jpg",
+      "alt": "Holla — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/holla/image-3.jpg",
+      "alt": "Holla — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/holla/gallery-01.jpg",
+        "alt": "Holla — frame 01"
+      },
+      {
+        "src": "/images/work/holla/gallery-02.jpg",
+        "alt": "Holla — frame 02"
+      },
+      {
+        "src": "/images/work/holla/gallery-03.jpg",
+        "alt": "Holla — frame 03"
+      },
+      {
+        "src": "/images/work/holla/gallery-04.jpg",
+        "alt": "Holla — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/holla/gallery-05.jpg",
+        "alt": "Holla — frame 05"
+      },
+      {
+        "src": "/images/work/holla/gallery-06.jpg",
+        "alt": "Holla — frame 06"
+      },
+      {
+        "src": "/images/work/holla/gallery-07.jpg",
+        "alt": "Holla — frame 07"
+      },
+      {
+        "src": "/images/work/holla/gallery-08.jpg",
+        "alt": "Holla — frame 08"
+      }
+    ]
+  },
+  {
+    "slug": "scrobblit",
+    "title": "Scrobblit",
+    "category": "Product & Web Design",
+    "subtitle": "Landing page for AI notes.",
+    "year": "2025",
+    "services": "Product design, Web design",
+    "contentHtml": "<h2>Notes that write themselves</h2><p>Scrobblit turns messy meeting notes into clean summaries with AI. We designed the landing page and core product flows, focusing on clarity: one input, one result, zero clutter.</p><p>The visual direction pairs a calm editorial grid with playful micro-interactions that reveal how the AI thinks, building trust without slowing anyone down.</p>",
+    "cover": {
+      "src": "/images/work/scrobblit/cover.jpg",
+      "alt": "Scrobblit — project cover"
+    },
+    "image2": {
+      "src": "/images/work/scrobblit/image-2.jpg",
+      "alt": "Scrobblit — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/scrobblit/image-3.jpg",
+      "alt": "Scrobblit — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/scrobblit/gallery-01.jpg",
+        "alt": "Scrobblit — frame 01"
+      },
+      {
+        "src": "/images/work/scrobblit/gallery-02.jpg",
+        "alt": "Scrobblit — frame 02"
+      },
+      {
+        "src": "/images/work/scrobblit/gallery-03.jpg",
+        "alt": "Scrobblit — frame 03"
+      },
+      {
+        "src": "/images/work/scrobblit/gallery-04.jpg",
+        "alt": "Scrobblit — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/scrobblit/gallery-05.jpg",
+        "alt": "Scrobblit — frame 05"
+      },
+      {
+        "src": "/images/work/scrobblit/gallery-06.jpg",
+        "alt": "Scrobblit — frame 06"
+      },
+      {
+        "src": "/images/work/scrobblit/gallery-07.jpg",
+        "alt": "Scrobblit — frame 07"
+      },
+      {
+        "src": "/images/work/scrobblit/gallery-08.jpg",
+        "alt": "Scrobblit — frame 08"
+      }
+    ]
+  },
+  {
+    "slug": "solar-inc",
+    "title": "Solar Inc.",
+    "category": "Web Design",
+    "subtitle": "Marketing site for clean energy.",
+    "year": "2025",
+    "services": "Web design, Art direction",
+    "contentHtml": "<h2>Clean energy, clear story</h2><p>Solar Inc. needed a website that explains complex energy products in seconds. We built a modular landing page system with bold numbers, honest photography and a simple path to a quote.</p><p>The result is a site the team can extend on their own, with components for every campaign and a tone that feels optimistic and grounded.</p>",
+    "cover": {
+      "src": "/images/work/solar-inc/cover.jpg",
+      "alt": "Solar Inc. — project cover"
+    },
+    "image2": {
+      "src": "/images/work/solar-inc/image-2.jpg",
+      "alt": "Solar Inc. — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/solar-inc/image-3.jpg",
+      "alt": "Solar Inc. — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/solar-inc/gallery-01.jpg",
+        "alt": "Solar Inc. — frame 01"
+      },
+      {
+        "src": "/images/work/solar-inc/gallery-02.jpg",
+        "alt": "Solar Inc. — frame 02"
+      },
+      {
+        "src": "/images/work/solar-inc/gallery-03.jpg",
+        "alt": "Solar Inc. — frame 03"
+      },
+      {
+        "src": "/images/work/solar-inc/gallery-04.jpg",
+        "alt": "Solar Inc. — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/solar-inc/gallery-05.jpg",
+        "alt": "Solar Inc. — frame 05"
+      },
+      {
+        "src": "/images/work/solar-inc/gallery-06.jpg",
+        "alt": "Solar Inc. — frame 06"
+      },
+      {
+        "src": "/images/work/solar-inc/gallery-07.jpg",
+        "alt": "Solar Inc. — frame 07"
+      },
+      {
+        "src": "/images/work/solar-inc/gallery-08.jpg",
+        "alt": "Solar Inc. — frame 08"
+      }
+    ]
+  },
+  {
+    "slug": "rock-skincare",
+    "title": "Rock Skincare",
+    "category": "Branding",
+    "subtitle": "Packaging and identity.",
+    "year": "2024",
+    "services": "Branding, Packaging",
+    "contentHtml": "<h2>Minerals, made gentle</h2><p>Rock is a mineral-based skincare line. Our packaging and identity balance raw, geological textures with soft colour and generous whitespace.</p><p>From jar to shelf to social, the system keeps a quiet confidence that lets the formulas speak for themselves.</p>",
+    "cover": {
+      "src": "/images/work/rock-skincare/cover.jpg",
+      "alt": "Rock Skincare — project cover"
+    },
+    "image2": {
+      "src": "/images/work/rock-skincare/image-2.jpg",
+      "alt": "Rock Skincare — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/rock-skincare/image-3.jpg",
+      "alt": "Rock Skincare — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/rock-skincare/gallery-01.jpg",
+        "alt": "Rock Skincare — frame 01"
+      },
+      {
+        "src": "/images/work/rock-skincare/gallery-02.jpg",
+        "alt": "Rock Skincare — frame 02"
+      },
+      {
+        "src": "/images/work/rock-skincare/gallery-03.jpg",
+        "alt": "Rock Skincare — frame 03"
+      },
+      {
+        "src": "/images/work/rock-skincare/gallery-04.jpg",
+        "alt": "Rock Skincare — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/rock-skincare/gallery-05.jpg",
+        "alt": "Rock Skincare — frame 05"
+      },
+      {
+        "src": "/images/work/rock-skincare/gallery-06.jpg",
+        "alt": "Rock Skincare — frame 06"
+      },
+      {
+        "src": "/images/work/rock-skincare/gallery-07.jpg",
+        "alt": "Rock Skincare — frame 07"
+      },
+      {
+        "src": "/images/work/rock-skincare/gallery-08.jpg",
+        "alt": "Rock Skincare — frame 08"
+      }
+    ]
+  },
+  {
+    "slug": "tsebaot-cafe",
+    "title": "Tsebaot Café",
+    "category": "Branding",
+    "subtitle": "Identity and illustration.",
+    "year": "2024",
+    "services": "Identity, Illustration",
+    "contentHtml": "<h2>A neighbourhood favourite</h2><p>Tsebaot is a small specialty coffee bar. We drew a hand-made logo and a set of illustrations inspired by the morning rituals of its regulars.</p><p>The identity lives on cups, menus and the shop window, giving the cafe a personality as warm as its first espresso of the day.</p>",
+    "cover": {
+      "src": "/images/work/tsebaot-cafe/cover.jpg",
+      "alt": "Tsebaot Café — project cover"
+    },
+    "image2": {
+      "src": "/images/work/tsebaot-cafe/image-2.jpg",
+      "alt": "Tsebaot Café — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/tsebaot-cafe/image-3.jpg",
+      "alt": "Tsebaot Café — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-01.jpg",
+        "alt": "Tsebaot Café — frame 01"
+      },
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-02.jpg",
+        "alt": "Tsebaot Café — frame 02"
+      },
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-03.jpg",
+        "alt": "Tsebaot Café — frame 03"
+      },
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-04.jpg",
+        "alt": "Tsebaot Café — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-05.jpg",
+        "alt": "Tsebaot Café — frame 05"
+      },
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-06.jpg",
+        "alt": "Tsebaot Café — frame 06"
+      },
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-07.jpg",
+        "alt": "Tsebaot Café — frame 07"
+      },
+      {
+        "src": "/images/work/tsebaot-cafe/gallery-08.jpg",
+        "alt": "Tsebaot Café — frame 08"
+      }
+    ]
+  },
+  {
+    "slug": "nuzz",
+    "title": "Nuzz",
+    "category": "Branding",
+    "subtitle": "Brand for a focus app.",
+    "year": "2025",
+    "services": "Branding, App design",
+    "contentHtml": "<h2>Focus, without the noise</h2><p>Nuzz helps people protect their deep-work hours. The brand uses a calm green palette, a confident sans-serif and an icon that folds into a quiet circle.</p><p>We designed the app’s key screens alongside the identity, so the product and the brand feel like one continuous, distraction-free experience.</p>",
+    "cover": {
+      "src": "/images/work/nuzz/cover.jpg",
+      "alt": "Nuzz — project cover"
+    },
+    "image2": {
+      "src": "/images/work/nuzz/image-2.jpg",
+      "alt": "Nuzz — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/nuzz/image-3.jpg",
+      "alt": "Nuzz — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/nuzz/gallery-01.jpg",
+        "alt": "Nuzz — frame 01"
+      },
+      {
+        "src": "/images/work/nuzz/gallery-02.jpg",
+        "alt": "Nuzz — frame 02"
+      },
+      {
+        "src": "/images/work/nuzz/gallery-03.jpg",
+        "alt": "Nuzz — frame 03"
+      },
+      {
+        "src": "/images/work/nuzz/gallery-04.jpg",
+        "alt": "Nuzz — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/nuzz/gallery-05.jpg",
+        "alt": "Nuzz — frame 05"
+      },
+      {
+        "src": "/images/work/nuzz/gallery-06.jpg",
+        "alt": "Nuzz — frame 06"
+      },
+      {
+        "src": "/images/work/nuzz/gallery-07.jpg",
+        "alt": "Nuzz — frame 07"
+      },
+      {
+        "src": "/images/work/nuzz/gallery-08.jpg",
+        "alt": "Nuzz — frame 08"
+      }
+    ]
+  },
+  {
+    "slug": "bird",
+    "title": "Bird",
+    "category": "Branding",
+    "subtitle": "Identity and logo system.",
+    "year": "2026",
+    "services": "Identity, Logo design",
+    "contentHtml": "<h2>Speed with personality</h2><p>Bird is a mobility startup moving people across cities. Our identity captures momentum through a stretched wordmark, vivid gradients and imagery shot in motion.</p><p>A flexible logo system adapts from app icon to vehicle livery, always pointing forward.</p>",
+    "cover": {
+      "src": "/images/work/bird/cover.jpg",
+      "alt": "Bird — project cover"
+    },
+    "image2": {
+      "src": "/images/work/bird/image-2.jpg",
+      "alt": "Bird — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/bird/image-3.jpg",
+      "alt": "Bird — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/bird/gallery-01.jpg",
+        "alt": "Bird — frame 01"
+      },
+      {
+        "src": "/images/work/bird/gallery-02.jpg",
+        "alt": "Bird — frame 02"
+      },
+      {
+        "src": "/images/work/bird/gallery-03.jpg",
+        "alt": "Bird — frame 03"
+      },
+      {
+        "src": "/images/work/bird/gallery-04.jpg",
+        "alt": "Bird — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/bird/gallery-05.jpg",
+        "alt": "Bird — frame 05"
+      },
+      {
+        "src": "/images/work/bird/gallery-06.jpg",
+        "alt": "Bird — frame 06"
+      },
+      {
+        "src": "/images/work/bird/gallery-07.jpg",
+        "alt": "Bird — frame 07"
+      },
+      {
+        "src": "/images/work/bird/gallery-08.jpg",
+        "alt": "Bird — frame 08"
+      }
+    ]
+  },
+  {
+    "slug": "bloop",
+    "title": "Bloop",
+    "category": "Branding",
+    "subtitle": "Playful brand in motion.",
+    "year": "2025",
+    "services": "Branding, Motion",
+    "contentHtml": "<h2>Playful by design</h2><p>Bloop is a creative tool for kids and families. We built a bright, elastic identity with bubbly letterforms and a motion kit that makes every screen feel like play.</p><p>The brand toolkit includes illustrations, sound cues and animation guidelines, so every new feature launches with the same joyful energy.</p>",
+    "cover": {
+      "src": "/images/work/bloop/cover.jpg",
+      "alt": "Bloop — project cover"
+    },
+    "image2": {
+      "src": "/images/work/bloop/image-2.jpg",
+      "alt": "Bloop — wide detail"
+    },
+    "image3": {
+      "src": "/images/work/bloop/image-3.jpg",
+      "alt": "Bloop — closing frame"
+    },
+    "gallery": [
+      {
+        "src": "/images/work/bloop/gallery-01.jpg",
+        "alt": "Bloop — frame 01"
+      },
+      {
+        "src": "/images/work/bloop/gallery-02.jpg",
+        "alt": "Bloop — frame 02"
+      },
+      {
+        "src": "/images/work/bloop/gallery-03.jpg",
+        "alt": "Bloop — frame 03"
+      },
+      {
+        "src": "/images/work/bloop/gallery-04.jpg",
+        "alt": "Bloop — frame 04"
+      }
+    ],
+    "gallery2": [
+      {
+        "src": "/images/work/bloop/gallery-05.jpg",
+        "alt": "Bloop — frame 05"
+      },
+      {
+        "src": "/images/work/bloop/gallery-06.jpg",
+        "alt": "Bloop — frame 06"
+      },
+      {
+        "src": "/images/work/bloop/gallery-07.jpg",
+        "alt": "Bloop — frame 07"
+      },
+      {
+        "src": "/images/work/bloop/gallery-08.jpg",
+        "alt": "Bloop — frame 08"
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "name": "Rovelle",
+  "legalName": "Rovelle Studio",
+  "year": "2026",
+  "tagline": "Independent design studio",
+  "description": "Rovelle is an independent studio shaping brands and digital products through motion, clarity and craft.",
+  "intro": "an independent studio shaping brands and digital products through motion, clarity and craft.",
+  "location": "Warsaw, PL",
+  "availability": "Open for projects",
+  "nav": [
+    {
+      "label": "Work",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    },
+    {
+      "label": "Playground",
+      "href": "/playground/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    }
+  ],
+  "cta": {
+    "label": "Book a call ↗",
+    "href": "/contact/"
+  },
+  "home": {
+    "years": "© 2019—26",
+    "statementSans": "We design",
+    "statementSerif": "what moves.",
+    "hint": "Scroll or drag to explore"
+  },
+  "playground": {
+    "count": "15",
+    "caption": "(Explorations)",
+    "description": "A space to explore visual directions, motion and interaction without overthinking. Some ideas grow into real projects — others stay here as part of the process."
+  },
+  "contact": {
+    "index": "(04) — Contact",
+    "booking": "Now booking — Q1 2027",
+    "statementSans": "Got an idea?",
+    "statementSerif": "Let’s make it move.",
+    "note": "Tell us what you’re building — a brand, a product or something that doesn’t have a name yet. We reply within two working days.",
+    "email": "hello@rovelle.studio",
+    "phone": "+48 22 555 01 26",
+    "phoneHref": "tel:+48225550126",
+    "addressLines": [
+      "Mokotowska 12,",
+      "00‑561 Warsaw, PL"
+    ],
+    "scheduleLabel": "Schedule a call ↗",
+    "scheduleHref": "https://cal.com",
+    "scheduleNote": "30 min intro — Google Meet",
+    "hours": "Mon — Fri, 9:00 — 18:00 CET"
+  },
+  "url": "https://voidx-rovelle-site.vercel.app"
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Soft Geometry",
+    "category": "3D",
+    "image": {
+      "src": "/images/playground/01-soft-geometry.jpg",
+      "alt": "Soft Geometry"
+    }
+  },
+  {
+    "title": "Grotesk Specimen",
+    "category": "Typography",
+    "image": {
+      "src": "/images/playground/02-grotesk-specimen.jpg",
+      "alt": "Grotesk Specimen"
+    }
+  },
+  {
+    "title": "Pocket UI",
+    "category": "Interface",
+    "image": {
+      "src": "/images/playground/03-pocket-ui.jpg",
+      "alt": "Pocket UI"
+    }
+  },
+  {
+    "title": "Chroma Fields",
+    "category": "Color",
+    "image": {
+      "src": "/images/playground/04-chroma-fields.jpg",
+      "alt": "Chroma Fields"
+    }
+  },
+  {
+    "title": "Editorial Grid",
+    "category": "Editorial",
+    "image": {
+      "src": "/images/playground/05-editorial-grid.jpg",
+      "alt": "Editorial Grid"
+    }
+  },
+  {
+    "title": "Mineral Pack",
+    "category": "Packaging",
+    "image": {
+      "src": "/images/playground/06-mineral-pack.jpg",
+      "alt": "Mineral Pack"
+    }
+  },
+  {
+    "title": "Concrete Light",
+    "category": "Photo",
+    "image": {
+      "src": "/images/playground/07-concrete-light.jpg",
+      "alt": "Concrete Light"
+    }
+  },
+  {
+    "title": "Night Trails",
+    "category": "Motion",
+    "image": {
+      "src": "/images/playground/08-night-trails.jpg",
+      "alt": "Night Trails"
+    }
+  },
+  {
+    "title": "Landing Study",
+    "category": "Web",
+    "image": {
+      "src": "/images/playground/09-landing-study.jpg",
+      "alt": "Landing Study"
+    }
+  },
+  {
+    "title": "Chrome Blob",
+    "category": "3D",
+    "image": {
+      "src": "/images/playground/10-chrome-blob.jpg",
+      "alt": "Chrome Blob"
+    }
+  },
+  {
+    "title": "Street Posters",
+    "category": "Print",
+    "image": {
+      "src": "/images/playground/11-street-posters.jpg",
+      "alt": "Street Posters"
+    }
+  },
+  {
+    "title": "Glass Forms",
+    "category": "3D",
+    "image": {
+      "src": "/images/playground/12-glass-forms.jpg",
+      "alt": "Glass Forms"
+    }
+  },
+  {
+    "title": "Stationery Set",
+    "category": "Branding",
+    "image": {
+      "src": "/images/playground/13-stationery-set.jpg",
+      "alt": "Stationery Set"
+    }
+  },
+  {
+    "title": "Neon Signal",
+    "category": "Photo",
+    "image": {
+      "src": "/images/playground/14-neon-signal.jpg",
+      "alt": "Neon Signal"
+    }
+  },
+  {
+    "title": "Paper Shapes",
+    "category": "Craft",
+    "image": {
+      "src": "/images/playground/15-paper-shapes.jpg",
+      "alt": "Paper Shapes"
+    }
+  }
+]
