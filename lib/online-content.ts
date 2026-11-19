@@ -33,7 +33,7 @@ export async function readContentDocument(): Promise<ContentDocument> {
         )
         return { projects, playground, carousel, about }
     }
-    const result = await get(blobPath, { access: "private" })
+    const result = await get(blobPath, { access: "private", useCache: false })
     if (!result?.stream) return defaults
     const stored = await new Response(result.stream).json()
     if (!stored || !Array.isArray(stored.projects) || !Array.isArray(stored.playground) || !Array.isArray(stored.carousel) || !stored.about) {
