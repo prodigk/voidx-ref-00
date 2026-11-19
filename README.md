@@ -8,7 +8,7 @@ A motion-first portfolio for an independent design studio. Five pages, a CMS-sty
 - **Infinite masonry** — the Playground repeats endlessly, with per-column parallax, soft edge blur and a click-to-enlarge lightbox.
 - **Tickers, accordions and a mobile drawer menu** — plus pinned columns, hover states and fully responsive layouts for desktop, tablet and phone.
 
-Built with **Next.js (App Router) + React + TypeScript**, plain CSS, no UI libraries. It exports to a fully static site you can host anywhere.
+Built with **Next.js (App Router) + React + TypeScript**. The site and CMS run on Vercel.
 
 ---
 
@@ -21,18 +21,28 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open http://localhost:3000. The local CMS is at http://localhost:3000/cms/.
+
+## CMS
+
+Framer의 8개 컬렉션(Projects, Playground, Contact Carousel, Services, Awards, Team, Plans, FAQ)을 이 저장소의 콘텐츠 파일에서 편집할 수 있습니다. 항목 추가·복제·삭제·순서 변경, 초안/공개 전환, 이미지 업로드, 프로젝트 본문 편집을 지원합니다.
+
+`.env.example`을 참고해 `.env.local`에 `CMS_ACCESS_CODE`를 설정하면 `/cms/`에서 접속 코드로 로그인할 수 있습니다. 현재 작업 공간에는 사용자가 설정한 코드가 들어 있으며 `.env.local`은 Git에서 제외됩니다.
+
+로컬에서는 CMS 저장 내용이 `content/*.json`과 `public/images/cms/`에 기록됩니다. 배포된 CMS는 Vercel의 비공개 Blob 저장소에 저장하고, 공개 사이트는 이 콘텐츠를 바로 읽습니다. 첫 온라인 저장 전에는 Git에 들어 있는 JSON을 표시합니다. 첫 온라인 저장 이후에는 Blob 콘텐츠가 우선하며, Git의 JSON 수정만으로 온라인 콘텐츠를 덮어쓰지 않습니다.
+
+초안은 공개 사이트에서 보이지 않습니다. CMS는 Framer 프로젝트와 동기화되지 않습니다. 온라인 이미지 업로드 한도는 4MB입니다. CMS 코드 변경은 Git 커밋 후 `main`에 푸시하면 GitHub Actions가 Vercel에 배포합니다. 접속 코드는 Vercel의 `CMS_ACCESS_CODE` 프로덕션 비밀 환경변수로 설정합니다.
 
 > Using Claude Code? Open this folder and ask: *“Run the site locally”*. Everything Claude needs is in `CLAUDE.md`.
 
 ## Build and deploy
 
 ```bash
-npm run build      # creates a static site in /out
-npm run preview    # serves /out locally to check the production build
+npm run build      # creates the production Next.js build
+npm run preview    # runs the production server locally
 ```
 
-Upload the `out` folder to any static host — Vercel, Netlify, Cloudflare Pages, GitHub Pages, S3. On Vercel or Netlify you can also just connect the repo: the build command is `npm run build` and the output directory is `out`.
+The CMS API and live content pages require a Node.js server. This repository is configured for Vercel Functions and Vercel Blob.
 
 This repository deploys to Vercel through GitHub Actions when a commit is pushed to `main`. The workflow builds and deploys the site, so the Vercel project's Git integration does not need to be enabled. It needs the repository secrets `VERCEL_TOKEN` (scoped to the `ugen's projects` team), `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`. Renew the token before November 19, 2027.
 
@@ -50,7 +60,7 @@ Before going live, set your domain in `content/site.json` → `"url"` (used for 
 
 ## Make it yours
 
-All text and lists live in `content/` — edit the JSON, save, and the site updates.
+The repository's default text and lists live in `content/`. Local CMS edits update these files. Online CMS edits live in Vercel Blob.
 
 | File | Controls |
 |---|---|

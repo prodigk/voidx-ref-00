@@ -2,11 +2,14 @@ import type { Metadata } from "next"
 import Nav from "@/components/Nav"
 import FooterBar from "@/components/FooterBar"
 import Ticker from "@/components/Ticker"
-import { carousel, site } from "@/content"
+import { site } from "@/content"
+import { readPublishedContent } from "@/lib/online-content"
 
 export const metadata: Metadata = { title: "Contact", description: `Email, phone and studio address — or schedule a call with ${site.legalName}.` }
+export const dynamic = "force-dynamic"
 
-export default function Contact() {
+export default async function Contact() {
+    const { carousel } = await readPublishedContent()
     const c = site.contact
     return (
         <main className="contact">

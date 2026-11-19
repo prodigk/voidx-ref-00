@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Rovelle — CMS</title>
+  <link rel="icon" href="/brand/favicon.png">
+  <link rel="stylesheet" href="/cms/styles.css">
+  <script src="/cms/app.js" defer></script>
+</head>
+<body>
+  <div id="login" class="login-screen" hidden>
+    <div class="login-card">
+      <img class="login-logo" src="/brand/symbol.svg" alt="">
+      <div class="login-kicker">ROVELLE CMS</div>
+      <h1>Enter your access code</h1>
+      <p>Manage the content behind your site.</p>
+      <form id="login-form">
+        <label for="access-code">Access code</label>
+        <input id="access-code" name="code" type="password" autocomplete="current-password" required autofocus>
+        <div id="login-error" class="form-error" role="alert"></div>
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="dashboard" class="dashboard" hidden>
+    <header class="topbar">
+      <div class="topbar-brand"><img src="/brand/symbol.svg" alt=""><strong>Rovelle</strong><span class="topbar-divider"></span><span>CMS</span></div>
+      <div class="topbar-right"><span class="workspace-pill">Content workspace</span><a id="view-site" href="/" target="_blank" rel="noopener noreferrer">View site ↗</a><button id="logout" type="button">Sign out</button></div>
+    </header>
+
+    <aside class="sidebar" aria-label="Collections">
+      <div class="sidebar-heading">Collections</div>
+      <nav id="collection-nav"></nav>
+      <div class="sidebar-bottom"><span class="status-dot"></span><span id="workspace-status">Content workspace</span></div>
+    </aside>
+
+    <main class="main">
+      <div class="collection-heading">
+        <div><div class="breadcrumb">COLLECTION <span>/</span> <span id="breadcrumb-name">PROJECTS</span></div><h1 id="collection-heading">Projects</h1><p id="collection-description"></p></div>
+        <div class="collection-count"><strong id="item-count">0</strong> items</div>
+      </div>
+      <div class="table-toolbar">
+        <button id="add-item" class="primary-button" type="button"><span aria-hidden="true">＋</span> New item</button>
+        <div class="toolbar-spacer"></div>
+        <label class="toolbar-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search collection</span><input id="search" type="search" placeholder="Search items"></label>
+        <label class="sr-only" for="status-filter">Filter by status</label>
+        <select id="status-filter" aria-label="Filter by status"><option value="all">All statuses</option><option value="published">Live</option><option value="draft">Draft</option></select>
+      </div>
+      <div class="table-scroll"><table class="content-table"><thead id="table-head"></thead><tbody id="item-list"></tbody></table></div>
+      <div class="table-footer"><span id="visible-count">0 items</span><span>Open an item to edit · use arrows to reorder</span></div>
+    </main>
+
+    <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+    <section id="editor-pane" class="editor-pane" aria-label="Item editor" hidden>
+      <div class="editor-topbar"><span>EDIT ITEM</span><button id="editor-close" type="button" aria-label="Close editor">×</button></div>
+      <div id="editor" hidden>
+        <div class="editor-top"><div><div class="editor-index">ITEM <span id="entry-position">01</span></div><h2 id="editor-title">Untitled</h2><span id="entry-slug" class="entry-slug"></span></div><div class="editor-controls"><button id="duplicate-item" type="button" title="Duplicate item" aria-label="Duplicate item">⧉</button><button id="delete-item" type="button" title="Delete item" aria-label="Delete item">⌫</button></div></div>
+        <div class="publish-row"><div><strong>Status</strong><span id="visibility-caption">Live on the site</span></div><label class="toggle"><input id="published" type="checkbox" aria-label="Live"><span></span></label></div>
+        <div id="form-fields" class="form-fields"></div>
+      </div>
+      <div class="savebar"><div id="save-state"><span class="save-indicator"></span><span>All changes saved</span></div><div class="save-actions"><button id="discard" class="quiet-button" type="button" disabled>Discard</button><button id="save" class="save-button" type="button" disabled>Save changes</button></div></div>
+    </section>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

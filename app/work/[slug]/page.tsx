@@ -3,14 +3,15 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import Nav from "@/components/Nav"
 import FooterBar from "@/components/FooterBar"
-import { projects, projectBySlug, workHref, type Img } from "@/content"
+import { workHref, type Img } from "@/content"
+import { readPublishedContent } from "@/lib/online-content"
 
-export function generateStaticParams() {
-    return projects.map((p) => ({ slug: p.slug }))
-}
+export const dynamic = "force-dynamic"
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const p = projectBySlug((await params).slug)
+    const { slug } = await params
+    const { projects } = await readPublishedContent()
+    const p = projects.find(project => project.slug === slug)
     return p ? { title: p.title, description: p.subtitle, openGraph: { images: [p.cover.src] } } : {}
 }
 
@@ -22,7 +23,8 @@ const Frame = ({ img, className = "", eager = false }: { img: Img; className?: s
 
 export default async function WorkPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
-    const p = projectBySlug(slug)
+    const { projects } = await readPublishedContent()
+    const p = projects.find(project => project.slug === slug)
     if (!p) notFound()
     const i = projects.indexOf(p)
     const next = projects[i + 1]

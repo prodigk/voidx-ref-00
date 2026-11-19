@@ -21,11 +21,20 @@ export type Project = {
     gallery2: Img[]
 }
 
+const visible = <T,>(items: T[]): T[] => items.filter((entry) => !(entry as { _draft?: boolean })._draft)
+
 export const site = siteJson
-export const projects = projectsJson as Project[]
-export const playground = playgroundJson as { title: string; category: string; image: Img }[]
-export const carousel = carouselJson as { title: string; image: Img }[]
-export const about = aboutJson
+export const projects = visible(projectsJson) as Project[]
+export const playground = visible(playgroundJson) as { title: string; category: string; image: Img }[]
+export const carousel = visible(carouselJson) as { title: string; image: Img }[]
+export const about = {
+    ...aboutJson,
+    services: visible(aboutJson.services),
+    awards: visible(aboutJson.awards),
+    team: visible(aboutJson.team),
+    plans: visible(aboutJson.plans),
+    faq: visible(aboutJson.faq),
+}
 
 export const projectBySlug = (slug: string) => projects.find((p) => p.slug === slug)
 export const workHref = (slug: string) => `/work/${slug}/`

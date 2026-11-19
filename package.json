@@ -2,17 +2,20 @@
   "name": "rovelle-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Rovelle — a motion-first studio portfolio template (Next.js, static export).",
+  "description": "Rovelle — a motion-first studio portfolio with an online CMS.",
   "scripts": {
     "dev": "next dev",
+    "cms": "node --env-file=.env.local cms/server.mjs",
     "build": "next build",
-    "preview": "npx --yes serve@14 out",
+    "preview": "next start",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@vercel/blob": "2.9.0",
     "next": "16.4.6",
     "react": "19.3.1",
-    "react-dom": "19.3.1"
+    "react-dom": "19.3.1",
+    "sanitize-html": "2.18.2"
   },
   "devDependencies": {
     "@types/node": "22.20.5",

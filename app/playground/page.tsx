@@ -2,17 +2,20 @@ import type { Metadata } from "next"
 import Nav from "@/components/Nav"
 import PlaygroundGrid from "@/components/PlaygroundGrid"
 import { site } from "@/content"
+import { readPublishedContent } from "@/lib/online-content"
 
 export const metadata: Metadata = { title: "Playground", description: site.playground.description }
+export const dynamic = "force-dynamic"
 
-export default function Playground() {
+export default async function Playground() {
+    const { playground } = await readPublishedContent()
     return (
         <>
             <Nav mode="solid" />
             <main className="playground">
                 <aside className="playground__side">
                     <div className="playground__count">
-                        <p className="t-count">{site.playground.count}</p>
+                        <p className="t-count">{String(playground.length).padStart(2, "0")}</p>
                         <p className="t-meta">{site.playground.caption}</p>
                     </div>
                     <div className="playground__bottom">
@@ -25,7 +28,7 @@ export default function Playground() {
                     </div>
                 </aside>
                 <div className="playground__grid">
-                    <PlaygroundGrid />
+                    <PlaygroundGrid entries={playground} />
                 </div>
             </main>
         </>

@@ -4,9 +4,11 @@ import Nav from "@/components/Nav"
 import FooterBar from "@/components/FooterBar"
 import Ticker from "@/components/Ticker"
 import { FaqItem, ServiceItem } from "@/components/Accordion"
-import { about, projectBySlug, projects, site, workHref } from "@/content"
+import { about as defaultAbout, site, workHref } from "@/content"
+import { readPublishedContent } from "@/lib/online-content"
 
-export const metadata: Metadata = { title: "About", description: about.principles.statement }
+export const metadata: Metadata = { title: "About", description: defaultAbout.principles.statement }
+export const dynamic = "force-dynamic"
 
 const Row = ({ label, note, children, large, extra }: { label: string; note?: string; children: React.ReactNode; large?: boolean; extra?: React.ReactNode }) => (
     <section className={`section-row${large ? " section-row--lg" : ""}`}>
@@ -19,8 +21,9 @@ const Row = ({ label, note, children, large, extra }: { label: string; note?: st
     </section>
 )
 
-export default function About() {
-    const featured = projectBySlug(about.featuredProject) ?? projects[0]
+export default async function About() {
+    const { about, projects } = await readPublishedContent()
+    const featured = projects.find(p => p.slug === about.featuredProject) ?? projects[0]
     return (
         <>
             <Nav mode="solid" />
@@ -147,7 +150,7 @@ export default function About() {
                     </div>
                 </Row>
 
-                <Row label="(08) — Featured project" large>
+                {featured && <Row label="(08) — Featured project" large>
                     <Link href={workHref(featured.slug)} className="featured" data-transition-label={featured.title}>
                         <div className="frame">
                             <img className="img-cover" src={featured.cover.src} alt={featured.cover.alt} loading="lazy" />
@@ -159,7 +162,7 @@ export default function About() {
                             <span className="t-nav-link">View project ↗</span>
                         </div>
                     </Link>
-                </Row>
+                </Row>}
 
                 <Row label="(09) — Questions, answered" large>
                     <div className="rows">

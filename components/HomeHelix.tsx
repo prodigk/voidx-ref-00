@@ -2,7 +2,7 @@
 
 import VortexHelix from "./effects/VortexHelix"
 import { useBreakpoint } from "./useBreakpoint"
-import { projects, workHref } from "@/content"
+import { workHref, type Project } from "@/content"
 
 const ink = "#141414"
 const muted = "#8a8072"
@@ -15,7 +15,7 @@ const settings = {
     phone: { size: 40, maxSize: 62, cardsPerTurn: 5, strips: 8, backBlur: 2, edgeTop: 22, edgeBottom: 24, edgeBlur: 10, lineGap: 80, insetX: 20, insetBottom: 18 },
 }
 
-export default function HomeHelix() {
+export default function HomeHelix({ projects }: { projects: Project[] }) {
     const bp = useBreakpoint()
     const items = projects.map((p) => ({ image: { src: p.cover.src, alt: p.cover.alt }, title: p.title, category: p.category, subtitle: p.subtitle, link: workHref(p.slug) }))
     return (

@@ -2,8 +2,12 @@ import Nav from "@/components/Nav"
 import FooterBar from "@/components/FooterBar"
 import HomeHelix from "@/components/HomeHelix"
 import { site } from "@/content"
+import { readPublishedContent } from "@/lib/online-content"
 
-export default function Home() {
+export const dynamic = "force-dynamic"
+
+export default async function Home() {
+    const { projects } = await readPublishedContent()
     return (
         <main className="home-hero">
             <Nav mode="overlay" />
@@ -24,7 +28,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="home-hero__helix">
-                <HomeHelix />
+                {projects.length > 0 && <HomeHelix projects={projects} />}
             </div>
             <FooterBar className="home-hero__footer" middle={{ label: site.home.hint }} hideMiddleOnPhone />
         </main>

@@ -2,14 +2,14 @@
 
 import InfiniteMasonry from "./effects/InfiniteMasonry"
 import { useBreakpoint } from "./useBreakpoint"
-import { playground } from "@/content"
+import type { PlaygroundItem } from "@/lib/online-content"
 
 const geist = "var(--font-geist), Geist, sans-serif"
 const serif = "var(--font-serif), 'Instrument Serif', serif"
 
-export default function PlaygroundGrid() {
+export default function PlaygroundGrid({ entries }: { entries: PlaygroundItem[] }) {
     const bp = useBreakpoint()
-    const items = playground.map((p) => ({ image: { src: p.image.src, alt: p.image.alt }, title: p.title, category: p.category }))
+    const items = entries.map((p) => ({ image: { src: p.image.src, alt: p.image.alt }, title: p.title, category: p.category }))
     return (
         <InfiniteMasonry
             items={items}
