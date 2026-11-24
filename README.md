@@ -46,6 +46,13 @@ The CMS API and live content pages require a Node.js server. This repository is 
 
 This repository deploys to Vercel through GitHub Actions when a commit is pushed to `main`. The workflow builds and deploys the site, so the Vercel project's Git integration does not need to be enabled. It needs the repository secrets `VERCEL_TOKEN` (scoped to the `ugen's projects` team), `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`. Renew the token before November 19, 2027.
 
+### Safe Git pushes and deployment
+
+- Keep local credentials in `.env.local`; keep `CMS_ACCESS_CODE` and `BLOB_READ_WRITE_TOKEN` in Vercel's Production environment. `.env.example` contains placeholders only. Changing `.env.local` does **not** update an existing Vercel deployment; update the Production variable and deploy again.
+- `.gitignore` excludes environment files, private keys, Vercel state, generated output, and local reference checkouts. Before a push, `git status --short` should show only intended source files.
+- The GitHub workflow checks tracked files for common secrets, audits production dependencies, and passes `VERCEL_TOKEN` only to the three Vercel CLI steps. For the same secret check before local pushes, run `git config core.hooksPath .githooks` once in this clone.
+- If a credential is ever committed, revoke or rotate it first. Removing a file or adding it to `.gitignore` does not erase older Git commits.
+
 Before going live, set your domain in `content/site.json` → `"url"` (used for social share images).
 
 ## Pages

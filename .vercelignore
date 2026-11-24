@@ -1,0 +1,16 @@
+# Keep local credentials and private reference files out of CLI uploads.
+.env
+.env.*
+*.env
+*.env.*
+.npmrc
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+voidx-ref-*/
+.githooks/
+scripts/

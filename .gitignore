@@ -1,9 +1,36 @@
-node_modules
-.next
-out
+# Dependencies and generated output
+/node_modules/
+/.next/
+/out/
+/coverage/
+/.turbo/
 *.tsbuildinfo
 next-env.d.ts
+__pycache__/
+*.pyc
+
+# Local credentials and deployment state
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+.npmrc
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+/.vercel/
+
+# Local tools and reference checkouts
+/.playwright-cli/
+/output/playwright/
+/voidx-ref-*/
+
+# OS and editor files
 .DS_Store
-.vercel
-.env.local
-.env*.local
+Thumbs.db
+*.log
