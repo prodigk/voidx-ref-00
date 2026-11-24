@@ -31,7 +31,7 @@ Framer의 8개 컬렉션(Projects, Playground, Contact Carousel, Services, Award
 
 로컬에서는 CMS 저장 내용이 `content/*.json`과 `public/images/cms/`에 기록됩니다. 배포된 CMS는 Vercel의 비공개 Blob 저장소에 저장하고, 공개 사이트는 이 콘텐츠를 바로 읽습니다. 첫 온라인 저장 전에는 Git에 들어 있는 JSON을 표시합니다. 첫 온라인 저장 이후에는 Blob 콘텐츠가 우선하며, Git의 JSON 수정만으로 온라인 콘텐츠를 덮어쓰지 않습니다.
 
-초안은 공개 사이트에서 보이지 않습니다. CMS는 Framer 프로젝트와 동기화되지 않습니다. 온라인 이미지 업로드 한도는 4MB입니다. CMS 코드 변경은 Git 커밋 후 `main`에 푸시하면 GitHub Actions가 Vercel에 배포합니다. 접속 코드는 Vercel의 `CMS_ACCESS_CODE` 프로덕션 비밀 환경변수로 설정합니다.
+초안은 공개 사이트에서 보이지 않습니다. CMS는 Framer 프로젝트와 동기화되지 않습니다. 온라인 이미지 업로드 한도는 4MB입니다. CMS 코드 변경은 Git 커밋 후 `main`에 푸시하면 연결된 Vercel 프로젝트가 자동 배포합니다. 접속 코드는 Vercel의 `CMS_ACCESS_CODE` 프로덕션 비밀 환경변수로 설정합니다.
 
 > Using Claude Code? Open this folder and ask: *“Run the site locally”*. Everything Claude needs is in `CLAUDE.md`.
 
@@ -44,13 +44,13 @@ npm run preview    # runs the production server locally
 
 The CMS API and live content pages require a Node.js server. This repository is configured for Vercel Functions and Vercel Blob.
 
-This repository deploys to Vercel through GitHub Actions when a commit is pushed to `main`. The workflow builds and deploys the site, so the Vercel project's Git integration does not need to be enabled. It needs the repository secrets `VERCEL_TOKEN` (scoped to the `ugen's projects` team), `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`. Renew the token before November 19, 2027.
+The Vercel project is connected to [prodigk/voidx-ref-00](https://github.com/prodigk/voidx-ref-00). A push to `main` triggers a production deployment through Vercel's Git integration. GitHub Actions validates source changes and does not need deployment secrets.
 
 ### Safe Git pushes and deployment
 
 - Keep local credentials in `.env.local`; keep `CMS_ACCESS_CODE` and `BLOB_READ_WRITE_TOKEN` in Vercel's Production environment. `.env.example` contains placeholders only. Changing `.env.local` does **not** update an existing Vercel deployment; update the Production variable and deploy again.
 - `.gitignore` excludes environment files, private keys, Vercel state, generated output, and local reference checkouts. Before a push, `git status --short` should show only intended source files.
-- The GitHub workflow checks tracked files for common secrets, audits production dependencies, and passes `VERCEL_TOKEN` only to the three Vercel CLI steps. For the same secret check before local pushes, run `git config core.hooksPath .githooks` once in this clone.
+- The GitHub workflow checks tracked files for common secrets, audits production dependencies, and builds the site. For the same secret check before local pushes, run `git config core.hooksPath .githooks` once in this clone.
 - If a credential is ever committed, revoke or rotate it first. Removing a file or adding it to `.gitignore` does not erase older Git commits.
 
 Before going live, set your domain in `content/site.json` → `"url"` (used for social share images).
